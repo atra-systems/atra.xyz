@@ -64,7 +64,7 @@ export default function Process() {
             <ProcessCard
               number="01"
               title="discovery"
-              description="requirements mapped. architecture defined. scope crystalized before execution begins."
+              description="requirements mapped. architecture defined. scope crystallized before execution begins."
             />
           </motion.div>
 

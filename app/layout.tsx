@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Source_Code_Pro } from 'next/font/google';
 import { Inter } from 'next/font/google';
 import { Provider } from 'jotai';
+import CustomCursor from './components/CustomCursor';
 import './globals.css';
 
 const sourceCodePro = Source_Code_Pro({
@@ -44,7 +45,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${sourceCodePro.variable} ${inter.variable}`}
     >
       <body>
-        <Provider>{children}</Provider>
+        <Provider>
+          <CustomCursor />
+          {children}
+        </Provider>
       </body>
     </html>
   );

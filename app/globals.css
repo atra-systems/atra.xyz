@@ -107,10 +107,16 @@
   html {
     scroll-behavior: smooth;
     @apply bg-black;
+    cursor: none;
   }
 
   body {
     @apply bg-black font-mono leading-tight text-white antialiased;
+    cursor: none;
+  }
+
+  * {
+    cursor: none;
   }
 
   h1,
@@ -186,8 +192,18 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    cursor: none !important;
   }
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Ensure cursor is hidden globally */
+html,
+body,
+*,
+*::before,
+*::after {
+  cursor: none !important;
 }

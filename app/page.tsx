@@ -62,8 +62,8 @@ export default function Home() {
             <div className="py-32 md:py-40">
               <div className="container mx-auto max-w-7xl px-4">
                 <ScrollRevealText
-                  className="text-3xl font-sans leading-tight -tracking-normal md:text-5xl"
-                  text="Custom software and creative projects built with modern technologies. Full-stack development, technical consulting, UI/UX design, motion and animation. Two decades of production experience distilled into clean implementations, deliberate architecture, and systems that scale without drama."
+                  className="font-sans text-3xl leading-tight tracking-tighter md:text-5xl"
+                  text="design engineering, full-stack development, web3 integrations, technical consulting, ui/ux, animation. two decades of production experience distilled into clean implementations, deliberate architecture, and systems that scale without drama."
                 />
               </div>
             </div>

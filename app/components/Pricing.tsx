@@ -1,161 +1,55 @@
-'use client';
-
-import InquiryModal from './InquiryModal';
-
 /**
- * Pricing component displays three service offerings in a responsive grid
- * 
+ * Services component displays available service offerings
+ *
  * Features:
- * - Three service tiers: web applications, marketing sites, development retainer
- * - Interactive cards with hover effects and corner animations
- * - Integrated inquiry modals for each service
- * - Responsive 3-column grid layout
- * - Detailed feature lists and pricing information
+ * - Minimal list-based layout
+ * - Service descriptions with scope indicators
+ * - Clean typography matching site aesthetic
  */
 
-/**
- * Main Pricing component that renders the services section
- */
-export default function Pricing() {
+export default function Services() {
   return (
-    <section id="pricing" className="py-32 md:py-40">
-      <div className="container mx-auto max-w-7xl px-4">
-        <div className="mb-12 text-center">
-          <h2 className="mb-4 font-mono text-2xl text-balance md:text-4xl">our services</h2>
-          <p className="text-muted-foreground font-mono text-sm leading-relaxed text-balance">
-            full-stack development and design services for modern web applications
+    <section id="services-list" className="py-32 md:py-40">
+      <div className="container mx-auto max-w-4xl px-4">
+        <div className="mb-16 text-center">
+          <h2 className="mb-4 font-sans text-2xl text-balance md:text-4xl tracking-tight">services</h2>
+          <p className="text-muted-foreground font-mono text-xs leading-relaxed text-balance uppercase tracking-wide">
+            projects begin at $12k
           </p>
         </div>
 
-        {/* Simplified 3-option pricing grid */}
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="space-y-12">
           {/* Web Applications */}
-          <div className="group h-full">
-            <div className="border-foreground/20 bg-muted/5 group-hover:bg-muted/10 relative flex h-full flex-col border p-8 transition-all duration-300">
-              {/* Corner caps */}
-              <div className="pointer-events-none absolute inset-0">
-                <div className="border-foreground/90 absolute top-0 left-0 h-2 w-2 -translate-x-px -translate-y-px border-t border-l transition-all duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1"></div>
-                <div className="border-foreground/90 absolute top-0 right-0 h-2 w-2 translate-x-px -translate-y-px border-t border-r transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"></div>
-                <div className="border-foreground/90 absolute bottom-0 left-0 h-2 w-2 -translate-x-px translate-y-px border-b border-l transition-all duration-300 group-hover:-translate-x-1 group-hover:translate-y-1"></div>
-                <div className="border-foreground/90 absolute right-0 bottom-0 h-2 w-2 translate-x-px translate-y-px border-r border-b transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1"></div>
-              </div>
-
-              <h3 className="mb-2 font-mono text-2xl">web applications</h3>
-              <div className="mb-4 font-mono text-3xl">$12k+</div>
-              <p className="text-muted-foreground mb-6 flex-1 font-mono text-xs">
-                complete product development from concept to production. modern web applications
-                built with scalable architecture and intuitive user experiences.
-              </p>
-              <ul className="text-muted-foreground mb-8 space-y-2 font-mono text-xs">
-                <li className="flex items-start gap-2">
-                  <div className="bg-muted-foreground mt-1.5 h-1 w-1 flex-shrink-0 rounded-full"></div>
-                  <span>full-stack development</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="bg-muted-foreground mt-1.5 h-1 w-1 flex-shrink-0 rounded-full"></div>
-                  <span>database design & api development</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="bg-muted-foreground mt-1.5 h-1 w-1 flex-shrink-0 rounded-full"></div>
-                  <span>ui/ux design & prototyping</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="bg-muted-foreground mt-1.5 h-1 w-1 flex-shrink-0 rounded-full"></div>
-                  <span>testing, deployment & hosting setup</span>
-                </li>
-              </ul>
-              <InquiryModal
-                title="web applications"
-                price="$12k+"
-                description="tell us about your web application project"
-              />
+          <div className="border-t border-border pt-8">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+              <h3 className="font-sans text-2xl tracking-tight">web applications</h3>
+              <div className="font-mono text-sm text-muted-foreground uppercase tracking-wide">6-10 weeks</div>
             </div>
+            <p className="text-muted-foreground font-mono text-xs uppercase tracking-wide mb-6">
+              full-stack development. database architecture. ui/ux design. api development. deployment infrastructure. testing and optimization.
+            </p>
           </div>
 
           {/* Marketing Sites */}
-          <div className="group h-full">
-            <div className="border-foreground/20 bg-muted/5 group-hover:bg-muted/10 relative flex h-full flex-col border p-8 transition-all duration-300">
-              {/* Corner caps */}
-              <div className="pointer-events-none absolute inset-0">
-                <div className="border-foreground/90 absolute top-0 left-0 h-2 w-2 -translate-x-px -translate-y-px border-t border-l transition-all duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1"></div>
-                <div className="border-foreground/90 absolute top-0 right-0 h-2 w-2 translate-x-px -translate-y-px border-t border-r transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"></div>
-                <div className="border-foreground/90 absolute bottom-0 left-0 h-2 w-2 -translate-x-px translate-y-px border-b border-l transition-all duration-300 group-hover:-translate-x-1 group-hover:translate-y-1"></div>
-                <div className="border-foreground/90 absolute right-0 bottom-0 h-2 w-2 translate-x-px translate-y-px border-r border-b transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1"></div>
-              </div>
-
-              <h3 className="mb-2 font-mono text-2xl">marketing sites</h3>
-              <div className="mb-4 font-mono text-3xl">$5k+</div>
-              <p className="text-muted-foreground mb-6 flex-1 font-mono text-xs">
-                high-performance websites and landing pages built for conversion. modern frameworks
-                with content management integration.
-              </p>
-              <ul className="text-muted-foreground mb-8 space-y-2 font-mono text-xs">
-                <li className="flex items-start gap-2">
-                  <div className="bg-muted-foreground mt-1.5 h-1 w-1 flex-shrink-0 rounded-full"></div>
-                  <span>responsive design & development</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="bg-muted-foreground mt-1.5 h-1 w-1 flex-shrink-0 rounded-full"></div>
-                  <span>cms & api integration</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="bg-muted-foreground mt-1.5 h-1 w-1 flex-shrink-0 rounded-full"></div>
-                  <span>seo optimization & performance tuning</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="bg-muted-foreground mt-1.5 h-1 w-1 flex-shrink-0 rounded-full"></div>
-                  <span>analytics setup & conversion tracking</span>
-                </li>
-              </ul>
-              <InquiryModal
-                title="marketing sites"
-                price="$5k+"
-                description="tell us about your marketing site needs"
-              />
+          <div className="border-t border-border pt-8">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+              <h3 className="font-sans text-2xl tracking-tight">marketing sites</h3>
+              <div className="font-mono text-sm text-muted-foreground uppercase tracking-wide">3-5 weeks</div>
             </div>
+            <p className="text-muted-foreground font-mono text-xs uppercase tracking-wide mb-6">
+              responsive design. cms integration. performance optimization. seo architecture. analytics implementation. conversion tracking.
+            </p>
           </div>
 
-          {/* Monthly Retainer */}
-          <div className="group h-full">
-            <div className="border-foreground/20 bg-muted/5 group-hover:bg-muted/10 relative flex h-full flex-col border p-8 transition-all duration-300">
-              {/* Corner caps */}
-              <div className="pointer-events-none absolute inset-0">
-                <div className="border-foreground/90 absolute top-0 left-0 h-2 w-2 -translate-x-px -translate-y-px border-t border-l transition-all duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1"></div>
-                <div className="border-foreground/90 absolute top-0 right-0 h-2 w-2 translate-x-px -translate-y-px border-t border-r transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"></div>
-                <div className="border-foreground/90 absolute bottom-0 left-0 h-2 w-2 -translate-x-px translate-y-px border-b border-l transition-all duration-300 group-hover:-translate-x-1 group-hover:translate-y-1"></div>
-                <div className="border-foreground/90 absolute right-0 bottom-0 h-2 w-2 translate-x-px translate-y-px border-r border-b transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1"></div>
-              </div>
-
-              <h3 className="mb-2 font-mono text-2xl">development retainer</h3>
-              <div className="mb-4 font-mono text-3xl">$10k+</div>
-              <p className="text-muted-foreground mb-6 flex-1 font-mono text-xs">
-                ongoing development partnership for continuous product evolution. dedicated
-                technical resources for your growing needs.
-              </p>
-              <ul className="text-muted-foreground mb-8 space-y-2 font-mono text-xs">
-                <li className="flex items-start gap-2">
-                  <div className="bg-muted-foreground mt-1.5 h-1 w-1 flex-shrink-0 rounded-full"></div>
-                  <span>priority development & bug fixes</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="bg-muted-foreground mt-1.5 h-1 w-1 flex-shrink-0 rounded-full"></div>
-                  <span>feature development & technical consulting</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="bg-muted-foreground mt-1.5 h-1 w-1 flex-shrink-0 rounded-full"></div>
-                  <span>performance optimization & scaling</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="bg-muted-foreground mt-1.5 h-1 w-1 flex-shrink-0 rounded-full"></div>
-                  <span>flexible monthly hour allocation</span>
-                </li>
-              </ul>
-              <InquiryModal
-                title="development retainer"
-                price="$10k+/month"
-                description="let's discuss your ongoing development needs"
-              />
+          {/* Development Retainer */}
+          <div className="border-t border-border pt-8">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+              <h3 className="font-sans text-2xl tracking-tight">ongoing partnership</h3>
+              <div className="font-mono text-sm text-muted-foreground uppercase tracking-wide">monthly</div>
             </div>
+            <p className="text-muted-foreground font-mono text-xs uppercase tracking-wide mb-6">
+              sustained development. technical consulting. performance monitoring. feature evolution. priority support. strategic guidance.
+            </p>
           </div>
         </div>
       </div>

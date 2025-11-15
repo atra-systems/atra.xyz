@@ -20,16 +20,16 @@ export default function CTA() {
   return (
     <section id="contact" className="py-32 text-center md:py-40">
       <div className="container mx-auto max-w-7xl px-4">
-        <h2 className="mb-4 text-2xl italic md:text-4xl lg:text-6xl">ready to build?</h2>
-        <p className="text-muted-foreground mx-auto mb-6 max-w-lg text-sm leading-relaxed">
-          let's discuss your project and see if we're a good fit.
+        <h2 className="mb-4 font-sans text-2xl tracking-tight md:text-4xl lg:text-6xl">initiate</h2>
+        <p className="text-muted-foreground mx-auto mb-6 max-w-lg font-mono text-xs uppercase tracking-wide">
+          discuss technical requirements
         </p>
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <CalendarModal />
           <GeneralInquiryModal />
         </div>
-        <p className="text-muted-foreground mt-4 text-xs">
-          or email directly: <a href="mailto:info@thirdindex.co">info@thirdindex.co</a>
+        <p className="text-muted-foreground mt-4 font-mono text-xs uppercase tracking-wide">
+          <a href="mailto:info@atra.xyz">info@atra.xyz</a>
         </p>
       </div>
     </section>

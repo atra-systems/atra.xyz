@@ -1,36 +1,89 @@
-// import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
-// import About from './components/About';
+import ProjectSection from './components/ProjectSection';
+import ScrollRevealText from './components/ScrollRevealText';
 import Process from './components/Process';
-import Pricing from './components/Pricing';
+import Services from './components/Pricing';
 import FAQ from './components/FAQ';
 import CTA from './components/CTA';
-import ScrollRevealText from './components/ScrollRevealText';
 
 export default function Home() {
+  // Temporary placeholder projects - replace with real data
+  const projects = [
+    {
+      title: 'project one',
+      meta: {
+        client: 'client name',
+        year: '2024',
+        services: ['web development', 'ui/ux design'],
+      },
+      imageUrl: 'https://picsum.photos/seed/project1/1920/1080',
+    },
+    {
+      title: 'project two',
+      meta: {
+        client: 'another client',
+        year: '2024',
+        services: ['full-stack development'],
+      },
+      imageUrl: 'https://picsum.photos/seed/project2/1920/1080',
+    },
+    {
+      title: 'project three',
+      meta: {
+        client: 'third client',
+        year: '2023',
+        services: ['web app', 'api development'],
+      },
+      imageUrl: 'https://picsum.photos/seed/project3/1920/1080',
+    },
+  ];
+
   return (
-    <div className="text-foreground bg-background relative flex min-h-screen flex-col">
-      {/* <Navbar /> */}
+    <div className="min-h-screen bg-black">
+      <div className="relative flex min-h-screen flex-col bg-black text-white">
+        <main>
+          <Hero />
 
-      <main className="flex flex-1 flex-col justify-end">
-        <Hero />
-        <section className="py-32 md:py-40">
-          <div className="container mx-auto px-4">
-            <ScrollRevealText
-              className="font-display text-xl leading-tight text-balance md:text-4xl lg:text-6xl"
-              text="we build <em>modern web applications</em> and digital products that work. from early-stage startups to established companies, we handle the <em>technical implementation</em> so you can focus on growing your business. our expertise spans <em>full-stack development</em>, user experience design, and <em>scalable architecture</em>."
-            />
+          {/* Work - Project sections */}
+          {/* <div id="work">
+            {projects.map((project, index) => (
+              <ProjectSection
+                key={index}
+                title={project.title}
+                meta={project.meta}
+                imageUrl={project.imageUrl}
+              />
+            ))}
+          </div> */}
+
+          {/* About - includes ScrollRevealText intro */}
+          <section id="about">
+            <div className="py-32 md:py-40">
+              <div className="container mx-auto max-w-7xl px-4">
+                <ScrollRevealText
+                  className="text-3xl font-sans leading-tight -tracking-normal md:text-5xl"
+                  text="Custom software and creative projects built with modern technologies. Full-stack development, technical consulting, UI/UX design, motion and animation. Two decades of production experience distilled into clean implementations, deliberate architecture, and systems that scale without drama."
+                />
+              </div>
+            </div>
+          </section>
+
+          {/* Services - combines Services and Process */}
+          <div id="services">
+            <Services />
+            <Process />
           </div>
-        </section>
 
-        <Process />
-        <Pricing />
-        <FAQ />
-        <CTA />
-      </main>
+          {/* FAQ */}
+          <FAQ />
 
-      <Footer />
+          {/* CTA */}
+          <CTA />
+        </main>
+
+        <Footer />
+      </div>
     </div>
   );
 }

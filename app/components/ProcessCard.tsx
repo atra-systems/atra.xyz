@@ -27,8 +27,8 @@ export default function ProcessCard({ number, title, description }: ProcessCardP
   return (
     <div className="space-y-4">
       <div className="font-mono text-sm opacity-50">{number}</div>
-      <h3 className="font-mono text-xl">{title}</h3>
-      <p className="text-muted-foreground text-sm leading-relaxed">{description}</p>
+      <h3 className="font-sans text-xl tracking-tight">{title}</h3>
+      <p className="text-muted-foreground font-mono text-xs uppercase tracking-wide leading-relaxed">{description}</p>
     </div>
   );
 }

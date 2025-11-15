@@ -51,7 +51,7 @@ export default function CalendarModal({
       <DialogTrigger asChild>
         {children || (
           <button
-            className="bg-foreground text-background hover:bg-foreground/90 pointer-events-auto inline-flex items-center gap-2 px-4 py-2 font-mono text-xs font-medium no-underline transition-colors"
+            className="bg-foreground text-background hover:bg-foreground/90 pointer-events-auto inline-flex items-center gap-2 px-4 py-2 font-mono text-xs font-medium no-underline transition-colors uppercase"
           >
             <CalendarIcon className="h-3 w-3" />
             schedule a call
@@ -62,10 +62,10 @@ export default function CalendarModal({
         <DialogHeader className="p-6 pb-0">
           <DialogTitle className="font-mono text-xl">schedule a discovery call</DialogTitle>
         </DialogHeader>
-        <div className="h-[600px] overflow-hidden">
+        <div className="h-[600px] overflow-hidden px-4">
           <Cal
             namespace="15min"
-            calLink="thirdindex/15min"
+            calLink="atra-systems/15min"
             style={{ width: '100%', height: '100%', overflow: 'hidden' }}
             config={{ layout: 'month_view' }}
           />

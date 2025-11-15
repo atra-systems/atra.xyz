@@ -33,7 +33,7 @@ export default function ScrollRevealText({ text, className = '' }: ScrollRevealT
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ['start 0.9', 'center center'],
+    offset: ['start 0.6', 'start 0.2'],
   });
 
   /**
@@ -90,7 +90,7 @@ export default function ScrollRevealText({ text, className = '' }: ScrollRevealT
         const wordColor = useTransform(
           scrollYProgress,
           [wordProgress * animationSpread, wordProgress * animationSpread + wordAnimationDuration],
-          ['rgba(0,0,0,.1)', 'rgb(0, 0, 0)'], // from gray-400 to black
+          ['rgba(255,255,255,.1)', 'rgb(255, 255, 255)'], // from gray-400 to black
         );
 
         return (

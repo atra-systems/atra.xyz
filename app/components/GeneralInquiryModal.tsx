@@ -83,7 +83,7 @@ export default function GeneralInquiryModal({
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         {children || (
-          <button className="border-foreground text-foreground hover:bg-foreground hover:text-background pointer-events-auto inline-flex items-center gap-2 border px-4 py-2 font-mono text-xs font-medium no-underline transition-colors">
+          <button className="border-foreground text-foreground hover:bg-foreground hover:text-background pointer-events-auto inline-flex items-center gap-2 border px-4 py-2 font-mono text-xs font-medium no-underline transition-colors uppercase">
             <MessageCircleIcon className="h-3 w-3" />
             send message
           </button>

@@ -20,9 +20,9 @@ export default function CTA() {
   return (
     <section id="contact" className="py-32 text-center md:py-40">
       <div className="container mx-auto max-w-7xl px-4">
-        <h2 className="mb-4 font-sans text-2xl tracking-tight md:text-4xl lg:text-6xl">initiate</h2>
+        <h2 className="mb-4 font-sans text-2xl tracking-tight md:text-4xl lg:text-6xl">let's talk</h2>
         <p className="text-muted-foreground mx-auto mb-6 max-w-lg font-mono text-xs uppercase tracking-wide">
-          discuss technical requirements
+          if you're building something and need someone who can handle both the technical execution and understand the design intent, let's talk about it.
         </p>
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <CalendarModal />

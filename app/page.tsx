@@ -9,35 +9,35 @@ import CTA from './components/CTA';
 
 export default function Home() {
   // Temporary placeholder projects - replace with real data
-  const projects = [
-    {
-      title: 'project one',
-      meta: {
-        client: 'client name',
-        year: '2024',
-        services: ['web development', 'ui/ux design'],
-      },
-      imageUrl: 'https://picsum.photos/seed/project1/1920/1080',
-    },
-    {
-      title: 'project two',
-      meta: {
-        client: 'another client',
-        year: '2024',
-        services: ['full-stack development'],
-      },
-      imageUrl: 'https://picsum.photos/seed/project2/1920/1080',
-    },
-    {
-      title: 'project three',
-      meta: {
-        client: 'third client',
-        year: '2023',
-        services: ['web app', 'api development'],
-      },
-      imageUrl: 'https://picsum.photos/seed/project3/1920/1080',
-    },
-  ];
+  // const projects = [
+  //   {
+  //     title: 'project one',
+  //     meta: {
+  //       client: 'client name',
+  //       year: '2024',
+  //       services: ['web development', 'ui/ux design'],
+  //     },
+  //     imageUrl: 'https://picsum.photos/seed/project1/1920/1080',
+  //   },
+  //   {
+  //     title: 'project two',
+  //     meta: {
+  //       client: 'another client',
+  //       year: '2024',
+  //       services: ['full-stack development'],
+  //     },
+  //     imageUrl: 'https://picsum.photos/seed/project2/1920/1080',
+  //   },
+  //   {
+  //     title: 'project three',
+  //     meta: {
+  //       client: 'third client',
+  //       year: '2023',
+  //       services: ['web app', 'api development'],
+  //     },
+  //     imageUrl: 'https://picsum.photos/seed/project3/1920/1080',
+  //   },
+  // ];
 
   return (
     <div className="min-h-screen bg-black">
@@ -62,8 +62,8 @@ export default function Home() {
             <div className="py-32 md:py-40">
               <div className="container mx-auto max-w-7xl px-4">
                 <ScrollRevealText
-                  className="font-sans text-3xl leading-tight tracking-tighter md:text-5xl"
-                  text="design engineering, full-stack development, web3 integrations, technical consulting, ui/ux, animation. two decades of production experience distilled into clean implementations, deliberate architecture, and systems that scale without drama."
+                  className="font-sans text-3xl leading-tight tracking-tight md:text-5xl"
+                  text="most projects involve typescript, react, and whatever backend makes sense for the problem. sometimes that's a headless cms, sometimes it's a custom api, sometimes it's integrating with existing systems that can't go down. e-commerce, fintech, web3 — different domains, same principles: write clean code, ship working software, don't overcomplicate things."
                 />
               </div>
             </div>

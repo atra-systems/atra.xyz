@@ -50,45 +50,30 @@ export default function FAQ() {
         <div className="mb-8 text-center">
           <h2 className="mb-4 font-sans text-2xl tracking-tight md:text-4xl">faq</h2>
           <p className="text-muted-foreground mx-auto max-w-lg font-mono text-xs tracking-wide uppercase">
-            questions answered
+            common questions
           </p>
         </div>
 
         <div className="mx-auto max-w-3xl">
           <Accordion type="single" collapsible className="w-full">
             <FAQItem
+              value="item-1"
+              question="what's the stack?"
+              answer="typescript, react, next.js, node, postgresql. supabase for database and auth. stripe for payments. vercel or cloudflare for deployment. modern frameworks and services chosen for performance and maintainability. the specific backend adapts to the problem—headless cms, custom api, or integrating with existing systems."
+            />
+            <FAQItem
               value="item-2"
-              question="technology stack"
-              answer="react. next.js. typescript. node.js. postgresql. modern frameworks chosen for performance and longevity."
+              question="do you handle design and ui?"
+              answer="yes. design engineering and ui implementation are core capabilities. i work with your existing design team, or handle the full spectrum from interface design through implementation. interaction design, animation, and micro-interactions are part of the engineering work, not separate handoffs. the result is cohesive—what you see is what gets built."
             />
             <FAQItem
               value="item-3"
-              question="timelines and scope"
-              answer="fixed scope. defined timelines. web applications: 6-10 weeks. marketing sites: 3-5 weeks. buffer included for precision."
+              question="what does it cost and how long does it take?"
+              answer="projects start at $12k. timeline depends on scope—some projects go from prototype to production in weeks, others need months of careful refactoring. fixed quotes provided after we discuss technical requirements. no surprises."
             />
             <FAQItem
               value="item-4"
-              question="ongoing support"
-              answer="retainer agreements available. sustained maintenance. continuous optimization. technical evolution as systems scale."
-            />
-            <FAQItem
-              value="item-5"
-              question="collaboration model"
-              answer="integrated with existing teams or independent execution. technical leadership when required. adaptive to organizational structure."
-            />
-            <FAQItem
-              value="item-6"
-              question="positioning"
-              answer="not an agency. independent technical consultancy. engineering depth over marketing breadth. long-term system architecture over transactional delivery."
-            />
-            <FAQItem
-              value="item-7"
-              question="design capability"
-              answer="full-spectrum execution. strategy through implementation. design and engineering unified. or integration with existing design systems."
-            />
-            <FAQItem
-              value="item-8"
-              question="principal"
+              question="who's behind this?"
               answer={
                 <>
                   <a
@@ -99,7 +84,7 @@ export default function FAQ() {
                   >
                     michael ciccarelli
                   </a>
-                  . twenty years buineering web platforms. fintech to media to emerging technology.
+                  . two decades building web platforms across fintech, media, and emerging technology. independent technical consultancy focused on engineering depth and design execution.
                 </>
               }
             />

@@ -32,7 +32,7 @@ export default function Hero() {
         fill
         priority
         sizes="100vw"
-        className="absolute inset-0 z-1 h-full w-full object-cover mix-blend-lighten"
+        className="absolute inset-0 z-1 h-full w-full object-cover mix-blend-lighten opacity-30"
       />
       <div className="z-10 container mx-auto grid grid-cols-12 gap-4 px-4 pb-[8dvh]">
         <div className="col-span-12 bg-transparent md:col-span-4">
@@ -40,7 +40,7 @@ export default function Hero() {
         </div>
         <div className="col-span-12 md:col-span-6 md:col-start-7 xl:col-span-3 xl:col-start-10">
           <p className="text-xs text-balance uppercase">
-            we build software and creative projects with design rigor and engineering precision.
+            software for the web—the kind that needs to work properly and feel right to use.
           </p>
         </div>
       </div>

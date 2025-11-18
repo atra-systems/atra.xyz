@@ -46,9 +46,9 @@ export default function Process() {
     <section id="process" className="py-32 md:py-40">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="mb-12 text-center">
-          <h2 className="font-sans mb-4 text-2xl tracking-tight md:text-4xl">process</h2>
+          <h2 className="font-sans mb-4 text-2xl tracking-tight md:text-4xl">approach</h2>
           <p className="text-muted-foreground font-mono text-xs uppercase tracking-wide">
-            methodology refined through execution
+            the process adapts to what the project requires, not the other way around
           </p>
         </div>
 
@@ -63,24 +63,24 @@ export default function Process() {
           <motion.div variants={cardVariants}>
             <ProcessCard
               number="01"
-              title="discovery"
-              description="requirements mapped. architecture defined. scope crystallized before execution begins."
+              title="understand the tradeoffs"
+              description="technical decisions get discussed in plain language. you shouldn't need a cs degree to understand the tradeoffs in your own product. we talk through what matters and why."
             />
           </motion.div>
 
           <motion.div variants={cardVariants} className="md:mt-12">
             <ProcessCard
               number="02"
-              title="execution"
-              description="iterative development. continuous integration. weekly visibility into progress and refinement."
+              title="adapt to the need"
+              description="each project is different. some need speed—prototype to production in weeks. others need care—refactoring legacy systems without breaking what already works. the approach fits the problem."
             />
           </motion.div>
 
           <motion.div variants={cardVariants} className="md:mt-24">
             <ProcessCard
               number="03"
-              title="deployment"
-              description="production infrastructure. performance monitoring. sustained optimization as systems evolve."
+              title="maintain what's built"
+              description="documentation, tests, and code that explains itself. the goal is software that can be maintained by whoever touches it next, not just the person who wrote it."
             />
           </motion.div>
         </motion.div>

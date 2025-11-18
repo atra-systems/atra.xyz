@@ -21,9 +21,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'atra.xyz',
+  title: 'atra',
   description:
-    'digital studio and consultancy building custom web applications with engineering rigor and thoughtful design',
+    'software engineering and design for modern web applications',
   icons: {
     icon: [
       { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },

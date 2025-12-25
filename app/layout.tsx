@@ -21,9 +21,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'atra',
-  description:
-    'software engineering and design for modern web applications',
+  title: 'atra systems',
+  description: 'software engineering and design for modern web applications',
   icons: {
     icon: [
       { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
@@ -40,10 +39,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${sourceCodePro.variable} ${inter.variable}`}
-    >
+    <html lang="en" className={`${sourceCodePro.variable} ${inter.variable}`}>
       <body>
         <Provider>
           <CustomCursor />

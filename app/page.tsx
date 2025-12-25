@@ -1,5 +1,6 @@
 import Footer from './components/Footer';
 import Hero from './components/Hero';
+import Header from './components/Header';
 import ProjectSection from './components/ProjectSection';
 import ScrollRevealText from './components/ScrollRevealText';
 import Process from './components/Process';
@@ -42,6 +43,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black">
       <div className="relative flex min-h-screen flex-col bg-black text-white">
+        <Header />
         <main>
           <Hero />
 
@@ -63,7 +65,7 @@ export default function Home() {
               <div className="container mx-auto max-w-7xl px-4">
                 <ScrollRevealText
                   className="font-sans text-3xl leading-tight tracking-tight md:text-5xl"
-                  text="most projects involve typescript, react, and whatever backend makes sense for the problem. sometimes that's a headless cms, sometimes it's a custom api, sometimes it's integrating with existing systems that can't go down. e-commerce, fintech, web3 — different domains, same principles: write clean code, ship working software, don't overcomplicate things."
+                  text="We build web applications with TypeScript and React, paired with whatever backend architecture the project calls for—headless CMS, custom API, or integration with existing infrastructure. Our work spans e-commerce, fintech, and emerging platforms, but the approach stays consistent: thoughtful engineering, clean implementation, and software that works the way it should."
                 />
               </div>
             </div>

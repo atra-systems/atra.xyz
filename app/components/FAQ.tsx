@@ -59,17 +59,17 @@ export default function FAQ() {
             <FAQItem
               value="item-1"
               question="what's the stack?"
-              answer="typescript, react, next.js, node, postgresql. supabase for database and auth. stripe for payments. vercel or cloudflare for deployment. modern frameworks and services chosen for performance and maintainability. the specific backend adapts to the problem—headless cms, custom api, or integrating with existing systems."
+              answer="TypeScript, React, Next.js, Node, PostgreSQL. Supabase for database and auth, Stripe for payments, Vercel or Cloudflare for deployment. The backend adapts to the problem—headless CMS, custom API, or integration with existing systems. Modern tools chosen for performance and maintainability, not trend."
             />
             <FAQItem
               value="item-2"
-              question="do you handle design and ui?"
-              answer="yes. design engineering and ui implementation are core capabilities. i work with your existing design team, or handle the full spectrum from interface design through implementation. interaction design, animation, and micro-interactions are part of the engineering work, not separate handoffs. the result is cohesive—what you see is what gets built."
+              question="do you handle design?"
+              answer="Yes. Design engineering and UI implementation are core capabilities. I work with your existing design team or handle the full spectrum from interface design through implementation. Interaction design, animation, and micro-interactions are part of the engineering work, not separate handoffs."
             />
             <FAQItem
               value="item-3"
-              question="what does it cost and how long does it take?"
-              answer="projects start at $12k. timeline depends on scope—some projects go from prototype to production in weeks, others need months of careful refactoring. fixed quotes provided after we discuss technical requirements. no surprises."
+              question="what does it cost?"
+              answer="Projects start at $12k. Timeline depends on scope—some go from prototype to production in weeks, others need months of careful work. Fixed quotes provided after discussing requirements. No surprises."
             />
             <FAQItem
               value="item-4"
@@ -82,9 +82,10 @@ export default function FAQ() {
                     rel="noopener noreferrer"
                     className="hover:text-foreground underline transition-colors"
                   >
-                    michael ciccarelli
+                    Michael Ciccarelli
                   </a>
-                  . two decades building web platforms across fintech, media, and emerging technology. independent technical consultancy focused on engineering depth and design execution.
+                  . Twenty years building web platforms across fintech, media, and emerging
+                  technology. Solo practice, focused on engineering depth and design execution.
                 </>
               }
             />

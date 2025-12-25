@@ -32,16 +32,14 @@ export default function Hero() {
         fill
         priority
         sizes="100vw"
-        className="absolute inset-0 z-1 h-full w-full object-cover mix-blend-lighten opacity-30"
+        className="absolute inset-0 z-1 h-full w-full object-cover opacity-30 mix-blend-lighten"
       />
       <div className="z-10 container mx-auto grid grid-cols-12 gap-4 px-4 pb-[8dvh]">
         <div className="col-span-12 bg-transparent md:col-span-4">
           <h1 className="font-mono text-xs uppercase">atra systems</h1>
         </div>
         <div className="col-span-12 md:col-span-6 md:col-start-7 xl:col-span-3 xl:col-start-10">
-          <p className="text-xs text-balance uppercase">
-            software for the web—the kind that needs to work properly and feel right to use.
-          </p>
+          <p className="text-xs text-balance uppercase">thoughtful software engineering</p>
         </div>
       </div>
     </div>

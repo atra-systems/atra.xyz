@@ -12,8 +12,7 @@ export default function Footer() {
   return (
     <footer className="relative flex items-end justify-center p-4 text-xs md:h-24">
       <div className="text-muted-foreground my-4 flex items-center text-center font-mono text-xs leading-loose uppercase">
-        © {currentYear} Atra Systems LLC. <br />
-        All rights reserved.
+        © {currentYear} Atra Systems LLC <br />
       </div>
     </footer>
   );

@@ -5,7 +5,7 @@ import GeneralInquiryModal from './GeneralInquiryModal';
 
 /**
  * CTA (Call to Action) component displays the bottom section with contact options
- * 
+ *
  * Features:
  * - Two primary actions: schedule a call and send message
  * - Uses modal dialogs for both interactions
@@ -20,17 +20,14 @@ export default function CTA() {
   return (
     <section id="contact" className="py-32 text-center md:py-40">
       <div className="container mx-auto max-w-7xl px-4">
-        <h2 className="mb-4 font-sans text-2xl tracking-tight md:text-4xl lg:text-6xl">let's talk</h2>
-        <p className="text-muted-foreground mx-auto mb-6 max-w-lg font-mono text-xs uppercase tracking-wide">
-          if you're building something and need someone who can handle both the technical execution and understand the design intent, let's talk about it.
-        </p>
+        <h4 className="mx-auto mb-4 max-w-100 font-sans text-2xl tracking-tight text-balance md:text-4xl">
+          let's talk <a href="mailto:info@atra.xyz">info@atra.xyz</a>
+        </h4>
+
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <CalendarModal />
           <GeneralInquiryModal />
         </div>
-        <p className="text-muted-foreground mt-4 font-mono text-xs uppercase tracking-wide">
-          <a href="mailto:info@atra.xyz">info@atra.xyz</a>
-        </p>
       </div>
     </section>
   );

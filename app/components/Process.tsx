@@ -5,7 +5,7 @@ import ProcessCard from './ProcessCard';
 
 /**
  * Process component displays the development process in three animated steps
- * 
+ *
  * Features:
  * - Three-step development process with staggered animations
  * - Cards appear on scroll with custom easing
@@ -46,9 +46,9 @@ export default function Process() {
     <section id="process" className="py-32 md:py-40">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="mb-12 text-center">
-          <h2 className="font-sans mb-4 text-2xl tracking-tight md:text-4xl">approach</h2>
-          <p className="text-muted-foreground font-mono text-xs uppercase tracking-wide">
-            the process adapts to what the project requires, not the other way around
+          <h2 className="mb-4 font-sans text-2xl tracking-tight md:text-4xl">approach</h2>
+          <p className="text-muted-foreground mx-auto max-w-100 font-mono text-xs tracking-wide text-balance uppercase">
+            the process adapts to what the project requires, not the other way around.
           </p>
         </div>
 
@@ -64,23 +64,23 @@ export default function Process() {
             <ProcessCard
               number="01"
               title="understand the tradeoffs"
-              description="technical decisions get discussed in plain language. you shouldn't need a cs degree to understand the tradeoffs in your own product. we talk through what matters and why."
+              description="Technical decisions get discussed in plain language. You shouldn't need a CS degree to understand the tradeoffs in your own product."
             />
           </motion.div>
 
           <motion.div variants={cardVariants} className="md:mt-12">
             <ProcessCard
               number="02"
-              title="adapt to the need"
-              description="each project is different. some need speed—prototype to production in weeks. others need care—refactoring legacy systems without breaking what already works. the approach fits the problem."
+              title="move at the right pace"
+              description="Some projects need speed. Others need care. The timeline and methodology fit the problem, not a predetermined process."
             />
           </motion.div>
 
           <motion.div variants={cardVariants} className="md:mt-24">
             <ProcessCard
               number="03"
-              title="maintain what's built"
-              description="documentation, tests, and code that explains itself. the goal is software that can be maintained by whoever touches it next, not just the person who wrote it."
+              title="build for the next person"
+              description="documentation, tests, and code that explains itself. Software should be maintainable by whoever touches it next, not just the person who wrote"
             />
           </motion.div>
         </motion.div>

@@ -63,7 +63,7 @@ export default function Home() {
               <div className="container mx-auto max-w-7xl px-4">
                 <ScrollRevealText
                   className="font-sans text-3xl leading-tight tracking-tight md:text-5xl"
-                  text="most projects involve typescript, react, and whatever backend makes sense for the problem. sometimes that's a headless cms, sometimes it's a custom api, sometimes it's integrating with existing systems that can't go down. e-commerce, fintech, web3 — different domains, same principles: write clean code, ship working software, don't overcomplicate things."
+                  text="we build web applications with typescript and modern web technologies, paired with whatever backend architecture the project calls for — headless CMS, custom API, or integration with existing infrastructure. our work spans e-commerce, fintech, web3, and creative projects, but the approach stays consistent: thoughtful engineering, clean implementation, and software that works the way it should."
                 />
               </div>
             </div>

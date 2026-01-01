@@ -9,14 +9,16 @@ export default function Header() {
   return (
     <header className="fixed top-0 right-0 left-0 z-50">
       <nav className="grid grid-cols-1 p-4 font-mono text-xs uppercase md:grid-cols-4">
-        <Link
-          href="/"
-          className={`hover:text-foreground transition-colors ${
-            pathname === '/' ? 'text-foreground' : 'text-muted-foreground'
-          }`}
-        >
-          atra systems
-        </Link>
+        <div>
+          <Link
+            href="/"
+            className={`hover:text-foreground transition-colors ${
+              pathname === '/' ? 'text-foreground' : 'text-muted-foreground'
+            }`}
+          >
+            atra systems
+          </Link>
+        </div>
 
         <div className="flex items-center">
           <Link
@@ -37,15 +39,16 @@ export default function Header() {
             work
           </Link>*/}
         </div>
-
-        <Link
-          href="/contact"
-          className={`hover:text-foreground transition-colors ${
-            pathname === '/contact' ? 'text-foreground' : 'text-muted-foreground'
-          }`}
-        >
-          contact
-        </Link>
+        <div>
+          <Link
+            href="/contact"
+            className={`hover:text-foreground transition-colors ${
+              pathname === '/contact' ? 'text-foreground' : 'text-muted-foreground'
+            }`}
+          >
+            contact
+          </Link>
+        </div>
       </nav>
     </header>
   );

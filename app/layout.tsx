@@ -1,9 +1,8 @@
 import type React from 'react';
 import type { Metadata } from 'next';
-import { Source_Code_Pro } from 'next/font/google';
-import { Inter } from 'next/font/google';
-import { Provider } from 'jotai';
-import CustomCursor from './components/CustomCursor';
+import { Source_Code_Pro, Inter } from 'next/font/google';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import './globals.css';
 
 const sourceCodePro = Source_Code_Pro({
@@ -21,7 +20,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'atra systems',
+  title: 'Atra Systems',
   description: 'software engineering and design for modern web applications',
   icons: {
     icon: [
@@ -32,7 +31,7 @@ export const metadata: Metadata = {
     apple: { url: '/apple-touch-icon.png', sizes: '180x180' },
   },
   appleWebApp: {
-    title: 'atra',
+    title: 'Atra',
   },
   manifest: '/site.webmanifest',
 };
@@ -40,11 +39,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${sourceCodePro.variable} ${inter.variable}`}>
-      <body>
-        <Provider>
-          <CustomCursor />
-          {children}
-        </Provider>
+      <body className="flex min-h-screen flex-col">
+        <Header />
+        <div className="flex-1">{children}</div>
+        <Footer />
       </body>
     </html>
   );

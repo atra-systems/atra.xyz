@@ -10,9 +10,13 @@
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="relative flex items-end justify-center p-4 text-xs md:h-24">
-      <div className="text-muted-foreground my-4 flex items-center text-center font-mono text-xs leading-loose uppercase">
-        © {currentYear} Atra Systems LLC <br />
+    <footer className="text-muted-foreground grid grid-cols-1 p-4 font-mono text-xs uppercase md:grid-cols-4">
+      <div>© {currentYear}</div>
+      <div className="md:col-start-3">
+        &rarr;&nbsp;
+        <a href="mailto:info@atra.xyz" className="hover:text-foreground transition-colors">
+          info@atra.xyz
+        </a>
       </div>
     </footer>
   );

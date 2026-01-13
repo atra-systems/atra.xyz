@@ -40,7 +40,7 @@ const technologies = [
 
 export default function InformationPage() {
   return (
-    <main className="grid grid-cols-1 gap-y-10 p-4 pt-20 md:grid-cols-4 md:gap-y-0">
+    <main className="grid grid-cols-1 gap-y-10 p-4 pt-20 md:grid-cols-4 md:gap-x-10 md:gap-y-0">
       {/* About / Approach */}
       <section className="bg-background md:col-span-2 md:row-span-2">
         <TextReveal as="h2" className="text-muted-foreground mb-6 font-mono text-xs uppercase">

@@ -29,15 +29,15 @@ export default function Header() {
           >
             information
           </Link>
-          {/*<span className="text-muted-foreground">,&nbsp;</span>*/}
-          {/*<Link
+          <span className="text-muted-foreground">,&nbsp;</span>
+          <Link
             href="/work"
             className={`hover:text-foreground transition-colors ${
               pathname === '/work' ? 'text-foreground' : 'text-muted-foreground'
             }`}
           >
             work
-          </Link>*/}
+          </Link>
         </div>
         <div>
           <Link

@@ -72,7 +72,7 @@ export default function ContactPage() {
             perWord
             className="mb-4 font-sans text-2xl tracking-tight md:text-4xl"
           >
-            let's talk
+            Get in touch
           </TextReveal>
           <TextReveal
             delay={0.15}
